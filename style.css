@@ -150,3 +150,96 @@ kbd {
 #restart-btn:hover {
   background: #9bbdff;
 }
+
+/* ---- Records ---- */
+.records-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  color: #888;
+}
+
+.records-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.records-list li.highlight {
+  color: #ffd54f;
+  font-weight: 700;
+}
+
+.records-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 11px;
+  color: #888;
+}
+
+.records-stats b {
+  color: #7aa2f7;
+}
+
+.small-btn {
+  background: #22223a;
+  color: #aaa;
+  border: 1px solid #3a3a5a;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.small-btn:hover {
+  background: #2d2d4a;
+}
+
+#overlay-records {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  min-width: 200px;
+}
+
+#overlay-records.hidden,
+#name-form.hidden {
+  display: none;
+}
+
+#record-highlight {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffd54f;
+}
+
+#name-form {
+  display: flex;
+  gap: 6px;
+}
+
+#name-input {
+  width: 120px;
+  padding: 6px 8px;
+  background: #1a1a25;
+  color: #e0e0e0;
+  border: 1px solid #3a3a5a;
+  border-radius: 4px;
+  font-size: 13px;
+  user-select: text;
+}
+
+#save-name-btn {
+  background: #ffd54f;
+  color: #0f0f17;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
